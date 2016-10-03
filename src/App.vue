@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="stopwatch">
     <h1>Remaining Time: {{ remainingTime }}</h1>
     <button name="button" @click="start" v-bind:disabled="active">Start</button>
     <button name="button" @click="stop" v-bind:disabled="!active">Stop</button>
@@ -9,7 +9,6 @@
 
 <script>
 import { mapActions } from 'vuex'
-
 export default {
   computed: {
     remainingTime () {
@@ -27,20 +26,17 @@ export default {
 html {
   height: 100%;
 }
-
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-
-#app {
+#stopwatch {
   color: #2c3e50;
   margin-top: -100px;
   max-width: 600px;
   font-family: Source Sans Pro, Helvetica, sans-serif;
   text-align: center;
 }
-
 </style>

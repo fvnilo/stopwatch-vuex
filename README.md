@@ -1,6 +1,6 @@
 # stopwatch-vuex
 
-> A simple stopwatch example with vuex.
+> A stopwatch example with vuex.
 
 ## Build Setup
 
